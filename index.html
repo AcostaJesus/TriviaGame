@@ -5,8 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+    <div id="splash">
+        <div>
+            <h3>Let's Play!</h3>
+            <h1>The Office Trivia Game!!</h1>
+            <br />
+            <p>You will have a set time limit to answer the questions.</p>
+            <br />
+            <p>Press start to begin</p>
+            <button type="button" id="start-btn" class="btn btn-primary black-background white"> Press Play.</button>
+        </div>
+    </div>
+
+    <div id="answer">
+        <div class="slpash2">
+            <h2>Your Results Will Display Here!</h2>
+            <br />
+            <p id="correctScreen"> Correct Answers: </p>
+            <p id="wrongAnswers">Wrong Answers: </p>
+        </div>
+    </div>
+
+    <div id="stop">
+            <div class="wrongBox">
+                <h2 class="timesUp">Times Up!</h2>
+                <br />
+                <p>Here's youre score: </p>
+                <p id="correctTimesUp">Correct Answers: </p>
+                <p id="wrongTimesUp">Wrong Answers: </p>
+            </div>
+    </div>
     
+    <div class="container">
+        <header>The Office Trivia!</header>
+        <div class="row timeRemain">Time Remaining:
+            <div id="time-remain">60</div>
+        </div>
+    
+        <div class="questions">
+            <button type="button" class="btn btn-primary black-background white" id="sub-but">Submit</button>
+        </div>
+    </div>
+
+    <script src="./assets/javascript/app.js"></script>
+
 </body>
 </html>
